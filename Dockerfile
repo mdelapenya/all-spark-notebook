@@ -13,7 +13,6 @@ ENV APACHE_SPARK_VERSION 2.0.1
 ENV SPARK_HOME /usr/local/spark
 ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.3-src.zip
 
-COPY kc_house_data.csv /home/jovyan/work/kc_house_data.csv
 COPY KC_House_Prices.ipynb /home/jovyan/work/KC_House_Prices.ipynb
 
 RUN chown -R jovyan:users /home/jovyan/work/
