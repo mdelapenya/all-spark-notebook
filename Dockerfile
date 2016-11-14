@@ -4,6 +4,7 @@ MAINTAINER Manuel de la Peña <manuel.delapenya@liferay.com>
 USER root
 
 RUN cd /tmp && \
+	rm -fr /usr/local/spark-* && \
         wget -q http://d3kbcqa49mib13.cloudfront.net/spark-2.0.1-bin-hadoop2.7.tgz && \
         tar xzf spark-2.0.1-bin-hadoop2.7.tgz -C /usr/local && \
         rm spark-2.0.1-bin-hadoop2.7.tgz
